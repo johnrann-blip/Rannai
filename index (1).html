@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANN AI | دستیار هوشمند سناریونویسی و تولید محتوا</title>
+    <meta name="description" content="RANN AI؛ ایده‌پردازی، سناریونویسی ریلز و تولید محتوای اختصاصی برای کسب‌وکارهای ایرانی.">
+    <link rel="canonical" href="https://johnrann-blip.github.io/Rannai/">
+    <meta name="theme-color" content="#0b0f19">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E✨%3C/text%3E%3C/svg%3E">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:site_name" content="RANN AI">
+    <meta property="og:title" content="RANN AI | سناریونویسی ریلز و تولید محتوا برای کسب‌وکارها">
+    <meta property="og:description" content="ایده، سناریوی ریلز و کپشن اختصاصی برای اینستاگرام شما. درخواست بررسی رایگان پیج و ۳ ایده.">
+    <meta property="og:url" content="https://johnrann-blip.github.io/Rannai/">
+    <meta property="og:image" content="https://johnrann-blip.github.io/Rannai/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RANN AI | سناریونویسی ریلز و تولید محتوا">
+    <meta name="twitter:description" content="ایده، سناریوی ریلز و کپشن اختصاصی برای اینستاگرام شما.">
+    <meta name="twitter:image" content="https://johnrann-blip.github.io/Rannai/og-image.png">
+    <meta name="keywords" content="سناریو ریلز, تولید محتوا اینستاگرام, کپشن نویسی, ایده پردازی محتوا, RANN AI">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"RANN AI","url":"https://johnrann-blip.github.io/Rannai/","telephone":"+989029102879","description":"ایده‌پردازی، سناریونویسی ریلز و کپشن برای کسب‌وکارهای ایرانی","areaServed":"IR","inLanguage":"fa"}</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Vazirmatn', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            50: '#f0f3ff', 100: '#e1e7fe', 500: '#6366f1',
+                            600: '#4f46e5', 700: '#4338ca', 900: '#1e1b4b',
+                            accent: '#a855f7', neon: '#00f2fe'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #a855f7 0%, #6366f1 50%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transition: border-color .2s ease, box-shadow .2s ease;
+        }
+        .glow-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 10px 40px -10px rgba(99, 102, 241, 0.3);
+        }
+        .hero-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(99,102,241,0.18) 0%, rgba(168,85,247,0.08) 50%, rgba(0,0,0,0) 70%);
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .tab-btn.active {
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            color: white;
+            border-color: transparent;
+        }
+        .tally-frame {
+            width: 100%;
+            min-height: 720px;
+            border: 0;
+            background: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3" aria-label="RANN AI">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 via-brand-accent to-brand-neon p-[2px]">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-wand-magic-sparkles text-brand-accent text-lg"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-wider text-white">RANN <span class="gradient-text">AI</span></span>
+                    <span class="text-[10px] text-slate-400 font-medium">تولید محتوای هوشمند</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300" aria-label="ناوبری اصلی">
+                <a href="#features" class="hover:text-brand-accent transition-colors">مزایا</a>
+                <a href="#samples" class="hover:text-brand-accent transition-colors">نمونه سناریوها</a>
+                <a href="#pricing" class="hover:text-brand-accent transition-colors">تعرفه‌ها</a>
+                <a href="#faq" class="hover:text-brand-accent transition-colors">سوالات متداول</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#free-audit" class="relative group overflow-hidden rounded-xl p-[1px] font-semibold text-sm">
+                    <span class="absolute inset-0 bg-gradient-to-r from-brand-accent via-brand-500 to-brand-neon rounded-xl"></span>
+                    <span class="relative block px-5 py-2.5 bg-slate-950 rounded-[11px] text-white">
+                        بررسی رایگان پیج
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-glow"></div>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-brand-500/30 text-slate-300 text-xs sm:text-sm font-medium mb-8">
+                <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span class="text-brand-accent font-semibold">تولید محتوای هوشمند:</span>
+                <span>ترکیب خلاقیت انسانی و قدرت AI</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6 max-w-5xl mx-auto">
+                محتوای حرفه‌ای اینستاگرام، <br class="hidden sm:inline"/>
+                <span class="gradient-text">بدون سردرد و بدون اتلاف وقت</span>
+            </h1>
+
+            <p class="text-slate-400 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-10 font-light">
+                دیگه نگران «چی پست بگذارم؟» نباشید. RANN AI برای کسب‌وکار شما
+                <strong class="text-slate-200">ایده‌های خلاقانه، سناریوی ریلز و کپشن‌های اصولی</strong>
+                تولید می‌کند.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-16">
+                <a href="#free-audit" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-600 to-brand-accent text-white font-bold text-base shadow-lg shadow-brand-600/30 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>درخواست آنالیز و بررسی رایگان</span>
+                </a>
+                <a href="#samples" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-700 text-slate-300 font-semibold text-base flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-eye text-slate-400"></i>
+                    <span>مشاهده نمونه سناریوها</span>
+                </a>
+            </div>
+
+            <!-- بخش آمار و دستاوردها -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-slate-800/80 dir-rtl">
+                <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
+                    <div class="text-3xl sm:text-4xl font-black text-white mb-1 tracking-tight">۳ ایده</div>
+                    <div class="text-xs sm:text-sm text-slate-400 font-medium">رایگان در بررسی اولیه</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
+                    <div class="text-3xl sm:text-4xl font-black gradient-text mb-1 tracking-tight">۷ تا ۳۰</div>
+                    <div class="text-xs sm:text-sm text-slate-400 font-medium">سناریو در هر پکیج</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
+                    <div class="text-3xl sm:text-4xl font-black text-emerald-400 mb-1 tracking-tight">اختصاصی</div>
+                    <div class="text-xs sm:text-sm text-slate-400 font-medium">برای هر کسب‌وکار</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
+                    <div class="text-3xl sm:text-4xl font-black text-sky-400 mb-1 tracking-tight">مستقیم</div>
+                    <div class="text-xs sm:text-sm text-slate-400 font-medium">پیام در واتساپ و تلگرام</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section id="features" class="py-20 bg-slate-950/50 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-4">
+                    چرا تولید محتوای منظم برای خیلی از کسب‌وکارهای کوچک دشوار است؟
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    نداشتن زمان، ایده و ساختار مشخص می‌تواند روند تولید محتوا را سخت و فرسایشی کند.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glow-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 mb-6">
+                        <i class="fa-solid fa-brain text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">کمبود ایده جدید</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        هر روز ساعت‌ها وقت می‌گذارید اما نمی‌دانید چه محتوایی تولید کنید که تکراری نباشد و مخاطب را درگیر کند.
+                    </p>
+                </div>
+
+                <div class="glow-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6">
+                        <i class="fa-solid fa-clock text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">اتلاف وقت</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        نوشتن یک سناریوی مناسب یا کپشن اصولی می‌تواند بخش قابل‌توجهی از زمان مدیریت کسب‌وکار را بگیرد.
+                    </p>
+                </div>
+
+                <div class="glow-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-6">
+                        <i class="fa-solid fa-money-bill-wave text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">هزینه خدمات محتوا</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        برای بعضی کسب‌وکارها، استفاده از خدمات کامل تولید محتوا یا استخدام نیروی ثابت می‌تواند هزینه قابل‌توجهی داشته باشد.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Samples -->
+    <section id="samples" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-accent text-sm font-bold block mb-2">نمونه سناریو</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+                    چند نمونه از ساختار سناریوهای RANN AI
+                </h2>
+                <p class="text-slate-400 text-sm">این نمونه‌ها صرفاً برای نمایش نوع خروجی هستند.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button onclick="switchTab('cafe')" id="tab-cafe" class="tab-btn active px-5 py-2.5 rounded-xl border border-slate-700 bg-slate-900 text-slate-300 text-sm">
+                    <i class="fa-solid fa-mug-hot"></i> کافه و رستوران
+                </button>
+                <button onclick="switchTab('clothing')" id="tab-clothing" class="tab-btn px-5 py-2.5 rounded-xl border border-slate-700 bg-slate-900 text-slate-300 text-sm">
+                    <i class="fa-solid fa-shirt"></i> آنلاین‌شاپ پوشاک
+                </button>
+                <button onclick="switchTab('beauty')" id="tab-beauty" class="tab-btn px-5 py-2.5 rounded-xl border border-slate-700 bg-slate-900 text-slate-300 text-sm">
+                    <i class="fa-solid fa-scissors"></i> سالن زیبایی
+                </button>
+            </div>
+
+            <div class="glow-card rounded-2xl p-6 sm:p-8 max-w-4xl mx-auto border border-brand-500/20">
+                <div id="content-cafe" class="tab-content space-y-6">
+                    <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                        <div>
+                            <span class="text-xs text-brand-accent bg-brand-500/10 px-3 py-1 rounded-full">حوزه کافه</span>
+                            <h3 class="text-xl font-bold text-white mt-2">سناریو: «راز اسپرسوی تلخ نشدن در خانه»</h3>
+                        </div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/80 border-r-4 border-amber-400 text-sm text-slate-200">
+                        <strong>قلاب (Hook):</strong> «اگه قهوه‌ای که تو خانه می‌سازی همیشه تلخ میشه، این ۱ اشتباه ساده رو داری انجام میدی!»
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/80 border-r-4 border-brand-500 text-sm text-slate-300">
+                        <strong>بدنه (Body):</strong> نمایش تمپ کردن درست، تنظیم دمای آب روی ۸۵ درجه و عصاره‌گیری کرم‌دار با موزیک ترند.
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/80 border-r-4 border-emerald-400 text-sm text-slate-200">
+                        <strong>فراخوان (CTA):</strong> «کلمه "قهوه" رو دایرکت بفرست تا دان تازه موکاپات رو بهت معرفی کنم.»
+                    </div>
+                </div>
+
+                <div id="content-clothing" class="tab-content hidden space-y-6">
+                    <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                        <div>
+                            <span class="text-xs text-brand-accent bg-brand-500/10 px-3 py-1 rounded-full">حوزه پوشاک</span>
+                            <h3 class="text-xl font-bold text-white mt-2">سناریو: «ست کردن مانتو مشکی به ۳ روش»</h3>
+                        </div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/80 border-r-4 border-amber-400 text-sm text-slate-200">
+                        <strong>قلاب (Hook):</strong> «فکر می‌کنی مانتو مشکی فقط با شال مشکی میاد؟ این ۳ ست استایل رو ببین تا نظرت عوض بشه!»
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/80 border-r-4 border-brand-500 text-sm text-slate-300">
+                        <strong>بدنه (Body):</strong> تعویض سریع ۳ استایل (کژوال، رسمی، دانشگاهی) روی ریتم ترانزیشن موزیک.
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/80 border-r-4 border-emerald-400 text-sm text-slate-200">
+                        <strong>فراخوان (CTA):</strong> «کدام استایل بیشتر بهت میومد؟ ۱، ۲ یا ۳؟ تو کامنت بنویس!»
+                    </div>
+                </div>
+
+                <div id="content-beauty" class="tab-content hidden space-y-6">
+                    <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                        <div>
+                            <span class="text-xs text-brand-accent bg-brand-500/10 px-3 py-1 rounded-full">حوزه زیبایی</span>
+                            <h3 class="text-xl font-bold text-white mt-2">سناریو: «قبل و بعد ترمیم ناخن»</h3>
+                        </div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/80 border-r-4 border-amber-400 text-sm text-slate-200">
+                        <strong>قلاب (Hook):</strong> «چرا کاشت ناخن بعضی‌ها بعد ۱ هفته هوا می‌گیره اما مال مشتری‌های ما ۱ ماه تمیز می‌مونه؟»
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/80 border-r-4 border-brand-500 text-sm text-slate-300">
+                        <strong>بدنه (Body):</strong> نمایش تایم‌لپس فرزکاری اصولی و زیرنویس نکات ماندگاری کاشت.
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/80 border-r-4 border-emerald-400 text-sm text-slate-200">
+                        <strong>فراخوان (CTA):</strong> «برای دریافت وقت نوبت‌دهی این هفته، عدد ۷ رو دایرکت کن.»
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-slate-950/60 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-accent text-sm font-bold block mb-2">تعرفه‌ها</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">پکیج‌های ایده‌پردازی و سناریونویسی</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glow-card rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-2">پکیج استارت (۷ روزه)</h3>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold text-white">۳۹۰,۰۰۰</span>
+                            <span class="text-xs text-slate-400">تومان</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li><i class="fa-solid fa-check text-emerald-400 ml-2"></i>۷ سناریو کامل ریلز</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 ml-2"></i>۷ کپشن آماده + هشتگ</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 ml-2"></i>آنالیز اولیه پیج</li>
+                        </ul>
+                    </div>
+                    <a href="#free-audit" class="w-full py-3 rounded-xl bg-slate-800 text-white font-semibold text-center">سفارش استارت</a>
+                </div>
+
+                <div class="glow-card rounded-2xl p-8 flex flex-col justify-between border-2 border-brand-500 bg-slate-900/90 relative">
+                    <div class="absolute -top-4 right-1/2 translate-x-1/2 bg-gradient-to-r from-brand-600 to-brand-accent text-white text-xs font-bold px-4 py-1 rounded-full">
+                        پیشنهاد ویژه 🔥
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">پکیج رشد (۱۵ روزه)</h3>
+                        <div class="mb-6">
+                            <span class="text-4xl font-extrabold text-white">۷۹۰,۰۰۰</span>
+                            <span class="text-xs text-slate-400">تومان</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li><i class="fa-solid fa-check text-emerald-400 ml-2"></i>۱۵ سناریو ریلز</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 ml-2"></i>۱۵ کپشن کامل</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 ml-2"></i>تقویم زمان‌بندی انتشار</li>
+                        </ul>
+                    </div>
+                    <a href="#free-audit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-brand-accent text-white font-bold text-center">انتخاب پکیج رشد</a>
+                </div>
+
+                <div class="glow-card rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-2">پکیج VIP (ماهیانه)</h3>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold text-white">۱,۴۹۰,۰۰۰</span>
+                            <span class="text-xs text-slate-400">تومان</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li><i class="fa-solid fa-check text-emerald-400 ml-2"></i>۳۰ سناریو اختصاصی</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 ml-2"></i>۳۰ کپشن + ایده‌های استوری</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 ml-2"></i>تقویم محتوایی کامل ۳۰ روزه</li>
+                        </ul>
+                    </div>
+                    <a href="#free-audit" class="w-full py-3 rounded-xl bg-slate-800 text-white font-semibold text-center">سفارش VIP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Audit Section: Tally -->
+    <section id="free-audit" class="py-20 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glow-card rounded-3xl p-6 sm:p-10 border border-brand-500/30">
+                <div class="text-center mb-8">
+                    <span class="text-emerald-400 text-xs font-bold bg-emerald-500/10 px-4 py-1.5 rounded-full border border-emerald-500/20 inline-block mb-3">
+                        ⚡ کاملاً رایگان
+                    </span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-3">
+                        درخواست بررسی و ارائه ۳ ایده رایگان
+                    </h2>
+                    <p class="text-slate-400 text-sm sm:text-base">
+                        اطلاعات خود را در فرم زیر وارد کنید تا درخواست شما برای بررسی اولیه دریافت شود.
+                    </p>
+                </div>
+
+                <!-- Direct Contact -->
+                <div class="mb-8 p-5 rounded-2xl bg-slate-900/70 border border-slate-800 text-center">
+                    <p class="text-slate-300 text-sm mb-4">ترجیح می‌دهید مستقیم پیام بدهید؟</p>
+                    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                        <a href="https://wa.me/989029102879?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%AF%D8%B1%DB%8C%D8%A7%D9%81%D8%AA%20%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%D9%BE%DB%8C%D8%AC%20%D9%88%20%DB%B3%20%D8%A7%DB%8C%D8%AF%D9%87%20%D8%A7%D8%B2%20%D8%B3%D8%A7%DB%8C%D8%AA%20RANN%20AI%20%D9%BE%DB%8C%D8%A7%D9%85%20%D9%85%DB%8C%E2%80%8C%D8%AF%D9%85." target="_blank" rel="noopener" class="px-6 py-3 rounded-xl bg-emerald-600 text-white font-semibold text-sm flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i>واتساپ</a>
+                        <a href="https://t.me/+989029102879" target="_blank" rel="noopener" class="px-6 py-3 rounded-xl bg-sky-600 text-white font-semibold text-sm flex items-center justify-center gap-2"><i class="fa-brands fa-telegram text-lg"></i>تلگرام</a>
+                        <a href="tel:+989029102879" class="px-6 py-3 rounded-xl bg-slate-800 text-white font-semibold text-sm flex items-center justify-center gap-2"><i class="fa-solid fa-phone"></i><span dir="ltr">0902 910 2879</span></a>
+                    </div>
+                </div>
+
+                <!-- Tally Form -->
+                <iframe
+                    class="tally-frame"
+                    src="https://tally.so/r/0QNWZZ?transparentBackground=1"
+                    title="فرم درخواست بررسی رایگان RANN AI"
+                    loading="lazy">
+                </iframe>
+
+                <p class="text-center text-xs text-slate-500 mt-4">
+                    با ارسال فرم، اطلاعات شما برای پیگیری درخواست بررسی استفاده خواهد شد.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-white mb-3">سوالات متداول</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="glow-card rounded-xl overflow-hidden p-5">
+                    <h3 class="font-bold text-white mb-2">چگونه مطمئن شوم سناریوها مناسب پیج من است؟</h3>
+                    <p class="text-slate-400 text-sm">سناریوها بر اساس اطلاعاتی که از حوزه کاری، مخاطبان و نیازهای شما دریافت می‌کنیم طراحی و در صورت نیاز قابل اصلاح هستند.</p>
+                </div>
+                <div class="glow-card rounded-xl overflow-hidden p-5">
+                    <h3 class="font-bold text-white mb-2">چقدر طول می‌کشد تا سفارش تحویل داده شود؟</h3>
+                    <p class="text-slate-400 text-sm">زمان تحویل هر سفارش بر اساس نوع پکیج و حجم کار، هنگام ثبت سفارش با شما هماهنگ می‌شود.</p>
+                </div>
+                <div class="glow-card rounded-xl overflow-hidden p-5">
+                    <h3 class="font-bold text-white mb-2">آیا قبل از خرید می‌توانم نمونه خروجی را ببینم؟</h3>
+                    <p class="text-slate-400 text-sm">بله. در بخش نمونه سناریو چند نمونه برای آشنایی با ساختار خروجی قرار داده شده است.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-12 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <span class="text-white font-bold">RANN AI</span>
+                <span class="text-xs text-slate-500">| دستیار هوشمند تولید محتوا</span>
+            </div>
+            <div class="text-xs text-slate-500">
+                © تمام حقوق برای RANN AI محفوظ است.
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="https://wa.me/989029102879?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%AF%D8%B1%DB%8C%D8%A7%D9%81%D8%AA%20%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%D9%BE%DB%8C%D8%AC%20%D9%88%20%DB%B3%20%D8%A7%DB%8C%D8%AF%D9%87%20%D8%A7%D8%B2%20%D8%B3%D8%A7%DB%8C%D8%AA%20RANN%20AI%20%D9%BE%DB%8C%D8%A7%D9%85%20%D9%85%DB%8C%E2%80%8C%D8%AF%D9%85." target="_blank" rel="noopener" class="hover:text-brand-accent">واتساپ</a>
+                <a href="https://t.me/+989029102879" target="_blank" rel="noopener" class="hover:text-brand-accent">تلگرام</a>
+                <a href="tel:+989029102879" class="hover:text-brand-accent" dir="ltr">0902 910 2879</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/989029102879?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%AF%D8%B1%DB%8C%D8%A7%D9%81%D8%AA%20%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%D9%BE%DB%8C%D8%AC%20%D9%88%20%DB%B3%20%D8%A7%DB%8C%D8%AF%D9%87%20%D8%A7%D8%B2%20%D8%B3%D8%A7%DB%8C%D8%AA%20RANN%20AI%20%D9%BE%DB%8C%D8%A7%D9%85%20%D9%85%DB%8C%E2%80%8C%D8%AF%D9%85." target="_blank" rel="noopener" aria-label="چت در واتساپ" class="fixed bottom-5 left-5 z-50 w-14 h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-lg shadow-emerald-500/30"><i class="fa-brands fa-whatsapp text-3xl"></i></a>
+
+    <script>
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            const content = document.getElementById('content-' + tabName);
+            const button = document.getElementById('tab-' + tabName);
+            if (content && button) {
+                content.classList.remove('hidden');
+                button.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

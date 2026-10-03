@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://johnrann-blip.github.io/Rannai/sitemap.xml
